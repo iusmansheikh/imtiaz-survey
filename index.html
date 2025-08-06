@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <title>IMTIAZ Experience Survey</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="survey-container">
+
+    <!-- Screen 1: Start -->
+    <div class="screen active">
+      <img src="assets/images/logo.png" alt="IMTIAZ Logo" class="logo" />
+      <p class="subtitle">EXPERIENCE SURVEY</p>
+      <button class="start-btn" onclick="nextScreen()">START SURVEY</button>
+    </div>
+
+    <!-- Screen 2: Overall Experience -->
+    <div class="screen">
+      <img src="assets/images/logo.png" alt="IMTIAZ Logo" class="logo" />
+      <p class="question">HOW WOULD YOU RATE YOUR OVERALL EXPERIENCE AT THE IMTIAZ SALES GALLERY?</p>
+      <div class="ratings">
+        <div class="rating-option">
+          <img src="assets/images/excellent.png" alt="Excellent" />
+          <span>EXCELLENT</span>
+        </div>
+        <div class="rating-option">
+          <img src="assets/images/very-good.png" alt="Very Good" />
+          <span>VERY GOOD</span>
+        </div>
+        <div class="rating-option">
+          <img src="assets/images/good.png" alt="Good" />
+          <span>GOOD</span>
+        </div>
+        <div class="rating-option">
+          <img src="assets/images/poor.png" alt="Poor" />
+          <span>POOR</span>
+        </div>
+      </div>
+      <div class="footer">
+        <span>800 IMTIAZ (468429)</span> | <span>WWW.IMTIAZ.AE</span>
+      </div>
+    </div>
+
+    <!-- Screen 3: Consultant Satisfaction -->
+    <div class="screen">
+      <img src="assets/images/logo.png" alt="IMTIAZ Logo" class="logo" />
+      <p class="question">HOW SATISFIED WERE YOU WITH THE PROFESSIONALISM AND SUPPORT PROVIDED BY OUR SALES CONSULTANT?</p>
+      <div class="ratings">
+        <div class="rating-option">
+          <img src="assets/images/excellent.png" alt="Excellent" />
+          <span>EXCELLENT</span>
+        </div>
+        <div class="rating-option">
+          <img src="assets/images/very-good.png" alt="Very Good" />
+          <span>VERY GOOD</span>
+        </div>
+        <div class="rating-option">
+          <img src="assets/images/good.png" alt="Good" />
+          <span>GOOD</span>
+        </div>
+        <div class="rating-option">
+          <img src="assets/images/poor.png" alt="Poor" />
+          <span>POOR</span>
+        </div>
+      </div>
+      <div class="footer">
+        <span>800 IMTIAZ (468429)</span> | <span>WWW.IMTIAZ.AE</span>
+      </div>
+    </div>
+
+    <!-- Screen 4: Decision-Making Clarity -->
+    <div class="screen">
+      <img src="assets/images/logo.png" alt="IMTIAZ Logo" class="logo" />
+      <p class="question">DID YOUR VISIT HELP YOU GAIN CLARITY OR MOVE FORWARD IN YOUR DECISION-MAKING JOURNEY?</p>
+      <div class="ratings">
+        <div class="rating-option">
+          <img src="assets/images/very-good.png" alt="Yes" />
+          <span>YES</span>
+        </div>
+        <div class="rating-option">
+          <img src="assets/images/good.png" alt="No" />
+          <span>NO</span>
+        </div>
+        <div class="rating-option">
+          <img src="assets/images/poor.png" alt="Not Yet" />
+          <span>NOT YET</span>
+        </div>
+      </div>
+      <div class="footer">
+        <span>800 IMTIAZ (468429)</span> | <span>WWW.IMTIAZ.AE</span>
+      </div>
+    </div>
+
+    <!-- Screen 5: NPS Recommendation -->
+    <div class="screen">
+      <img src="assets/images/logo.png" alt="IMTIAZ Logo" class="logo" />
+      <p class="question">ON A SCALE OF 1–10, HOW LIKELY ARE YOU TO RECOMMEND A VISIT TO IMTIAZ TO A FRIEND OR COLLEAGUE?</p>
+      <div class="nps-scale">
+        <button class="nps-btn">1</button>
+        <button class="nps-btn">2</button>
+        <button class="nps-btn">3</button>
+        <button class="nps-btn">4</button>
+        <button class="nps-btn">5</button>
+        <button class="nps-btn">6</button>
+        <button class="nps-btn">7</button>
+        <button class="nps-btn">8</button>
+        <button class="nps-btn">9</button>
+        <button class="nps-btn">10</button>
+      </div>
+      <div class="footer">
+        <span>800 IMTIAZ (468429)</span> | <span>WWW.IMTIAZ.AE</span>
+      </div>
+    </div>
+
+
+    <!-- Screen 6: Consultant Name & Suggestion -->
+<div class="screen">
+  <img src="assets/images/logo.png" alt="IMTIAZ Logo" class="logo" />
+  
+  <p class="question">NAME OF THE SALES CONSULTANT WHO ASSISTED YOU:</p>
+  <input type="text" class="text-input" placeholder="Name Of The Sales Consultant" id="consultantName" />
+
+  <p class="suggestion" style="margin-top: 30px;">SUGGESTION</p>
+  <textarea class="text-area" placeholder="My Suggestion" id="suggestion"></textarea>
+
+  <button class="submit-btn" onclick="submitSurvey()">SUBMIT</button>
+
+  <div class="footer">
+    <span>800 IMTIAZ (468429)</span> | <span>WWW.IMTIAZ.AE</span>
+  </div>
+</div>
+
+
+<!-- Screen 7: Thank You -->
+<!-- Screen 7: Thank You -->
+<div class="screen">
+  <div class="lottie-container">
+    <lottie-player
+      src="data:application/json;base64,eyJ2IjoiNS43LjEyIiwiZnIiOjI0LCJpcCI6MCwib3AiOjYzLCJ3Ijo1MjAsImgiOjUyMCwibm0iOiJDaGVja2xpc3QgMiIsImRkZCI6MCwiYXNzZXRzIjpbXSwibGF5ZXJzIjpbeyJkZGQiOjAsImluZCI6MSwidHkiOjQsIm5tIjoiQ2hlY2tsaXN0Iiwic3IiOjEsImtzIjp7Im8iOnsiYSI6MSwiayI6W3siaSI6eyJ4IjpbMC42NjddLCJ5IjpbMV19LCJvIjp7IngiOlswLjMzM10sInkiOlswXX0sInQiOjUwLCJzIjpbMTAwXX0seyJ0Ijo2MiwicyI6WzBdfV0sIml4IjoxMX0sInIiOnsiYSI6MCwiayI6MCwiaXgiOjEwfSwicCI6eyJhIjowLCJrIjpbMjU5LjU4NywyNjAuMTE5LDBdLCJpeCI6MiwibCI6Mn0sImEiOnsiYSI6MCwiayI6WzI5Ny41ODcsMjk4LjExOSwwXSwiaXgiOjEsImwiOjJ9LCJzIjp7ImEiOjAsImsiOlsxMDAsMTAwLDEwMF0sIml4Ijo2LCJsIjoyfX0sImFvIjowLCJzaGFwZXMiOlt7InR5IjoiZ3IiLCJpdCI6W3siaW5kIjowLCJ0eSI6InNoIiwiaXgiOjEsImtzIjp7ImEiOjAsImsiOnsiaSI6W1swLDBdLFswLDBdLFswLDBdXSwibyI6W1swLDBdLFswLDBdLFswLDBdXSwidiI6W1s1NC43NTQsLTM2LjEyMV0sWy0xNy40ODcsMzYuMTJdLFstNTQuNzU0LC0xLjE0N11dLCJjIjpmYWxzZX0sIml4IjoyfSwibm0iOiJQYXRoIDEiLCJtbiI6IkFEQkUgVmVjdG9yIFNoYXBlIC0gR3JvdXAiLCJoZCI6ZmFsc2V9LHsidHkiOiJzdCIsImMiOnsiYSI6MCwiayI6WzEsMSwxLDFdLCJpeCI6M30sIm8iOnsiYSI6MCwiayI6MTAwLCJpeCI6NH0sInciOnsiYSI6MCwiayI6MjMsIml4Ijo1fSwibGMiOjIsImxqIjoyLCJibSI6MCwibm0iOiJTdHJva2UgMSIsIm1uIjoiQURCRSBWZWN0b3IgR3JhcGhpYyAtIFN0cm9rZSIsImhkIjpmYWxzZX0seyJ0eSI6InRyIiwicCI6eyJhIjowLCJrIjpbMjk0Ljk3MSwyOTguNjc5XSwiaXgiOjJ9LCJhIjp7ImEiOjAsImsiOlswLDBdLCJpeCI6MX0sInMiOnsiYSI6MCwiayI6WzEwMCwxMDBdLCJpeCI6M30sInIiOnsiYSI6MCwiayI6MCwiaXgiOjZ9LCJvIjp7ImEiOjAsImsiOjEwMCwiaXgiOjd9LCJzayI6eyJhIjowLCJrIjowLCJpeCI6NH0sInNhIjp7ImEiOjAsImsiOjAsIml4Ijo1fSwibm0iOiJUcmFuc2Zvcm0ifV0sIm5tIjoiR3JvdXAgMSIsIm5wIjoyLCJjaXgiOjIsImJtIjowLCJpeCI6MSwibW4iOiJBREJFIFZlY3RvciBHcm91cCIsImhkIjpmYWxzZX0seyJ0eSI6InRtIiwicyI6eyJhIjoxLCJrIjpbeyJpIjp7IngiOlswXSwieSI6WzFdfSwibyI6eyJ4IjpbMC4zMzNdLCJ5IjpbMF19LCJ0IjoyNCwicyI6WzEwMF19LHsidCI6MzYsInMiOlswXX1dLCJpeCI6MX0sImUiOnsiYSI6MCwiayI6MTAwLCJpeCI6Mn0sIm8iOnsiYSI6MCwiayI6MCwiaXgiOjN9LCJtIjoxLCJpeCI6Miwibm0iOiJUcmltIFBhdGhzIDEiLCJtbiI6IkFEQkUgVmVjdG9yIEZpbHRlciAtIFRyaW0iLCJoZCI6ZmFsc2V9XSwiaXAiOjAsIm9wIjo3MjAsInN0IjowLCJibSI6MH0seyJkZGQiOjAsImluZCI6MiwidHkiOjQsIm5tIjoiQ3JpY2xlIiwic3IiOjEsImtzIjp7Im8iOnsiYSI6MSwiayI6W3siaSI6eyJ4IjpbMC42NjddLCJ5IjpbMV19LCJvIjp7IngiOlswLjMzM10sInkiOlswXX0sInQiOjUwLCJzIjpbMTAwXX0seyJ0Ijo2MiwicyI6WzBdfV0sIml4IjoxMX0sInIiOnsiYSI6MCwiayI6MCwiaXgiOjEwfSwicCI6eyJhIjowLCJrIjpbMjYwLDI2MCwwXSwiaXgiOjIsImwiOjJ9LCJhIjp7ImEiOjAsImsiOlstNy42MjcsLTcuNjkxLDBdLCJpeCI6MSwibCI6Mn0sInMiOnsiYSI6MSwiayI6W3siaSI6eyJ4IjpbMC42NjcsMC42NjcsMC42NjddLCJ5IjpbMSwxLDFdfSwibyI6eyJ4IjpbMC4xNjcsMC4xNjcsMC4xNjddLCJ5IjpbMCwwLDBdfSwidCI6MTgsInMiOlsxMjQuMjIyLDEyNC4yMjIsMTAwXX0seyJpIjp7IngiOlswLjY2NywwLjY2NywwLjY2N10sInkiOlsxLDEsMV19LCJvIjp7IngiOlswLjMzMywwLjMzMywwLjMzM10sInkiOlswLDAsMF19LCJ0IjoyMCwicyI6WzEzNC4yMjIsMTM0LjIyMiwxMDBdfSx7ImkiOnsieCI6WzAuNjY3LDAuNjY3LDAuNjY3XSwieSI6WzEsMSwxXX0sIm8iOnsieCI6WzAuMzMzLDAuMzMzLDAuMzMzXSwieSI6WzAsMCwwXX0sInQiOjIyLCJzIjpbMTE0LjIyMiwxMTQuMjIyLDEwMF19LHsidCI6MjQsInMiOlsxMjQuMjIyLDEyNC4yMjIsMTAwXX1dLCJpeCI6NiwibCI6Mn19LCJhbyI6MCwic2hhcGVzIjpbeyJ0eSI6ImdyIiwiaXQiOlt7ImQiOjEsInR5IjoiZWwiLCJzIjp7ImEiOjAsImsiOlsxNzguNDYsMTc4LjQ2XSwiaXgiOjJ9LCJwIjp7ImEiOjAsImsiOlswLDBdLCJpeCI6M30sIm5tIjoiRWxsaXBzZSBQYXRoIDEiLCJtbiI6IkFEQkUgVmVjdG9yIFNoYXBlIC0gRWxsaXBzZSIsImhkIjpmYWxzZX0seyJ0eSI6InRtIiwicyI6eyJhIjowLCJrIjowLCJpeCI6MX0sImUiOnsiYSI6MSwiayI6W3siaSI6eyJ4IjpbMC4yMzldLCJ5IjpbMV19LCJvIjp7IngiOlswLjMzM10sInkiOlswXX0sInQiOjAsInMiOlswXX0seyJ0IjoyNCwicyI6WzEwMF19XSwiaXgiOjJ9LCJvIjp7ImEiOjAsImsiOjAsIml4IjozfSwibSI6MSwiaXgiOjIsIm5tIjoiVHJpbSBQYXRocyAxIiwibW4iOiJBREJFIFZlY3RvciBGaWx0ZXIgLSBUcmltIiwiaGQiOmZhbHNlfSx7InR5Ijoic3QiLCJjIjp7ImEiOjAsImsiOlswLjA3NDUwOTgwMzkyMiwwLjU5NjA3ODQzMTM3MywwLjM0OTAxOTYwNzg0MywxXSwiaXgiOjN9LCJvIjp7ImEiOjAsImsiOjEwMCwiaXgiOjR9LCJ3Ijp7ImEiOjAsImsiOjEwLCJpeCI6NX0sImxjIjoyLCJsaiI6MiwiYm0iOjAsIm5tIjoiU3Ryb2tlIDEiLCJtbiI6IkFEQkUgVmVjdG9yIEdyYXBoaWMgLSBTdHJva2UiLCJoZCI6ZmFsc2V9LHsidHkiOiJmbCIsImMiOnsiYSI6MCwiayI6WzAuMDc0NTA5ODAzOTIyLDAuNTk2MDc4NDMxMzczLDAuMzQ5MDE5NjA3ODQzLDFdLCJpeCI6NH0sIm8iOnsiYSI6MSwiayI6W3siaSI6eyJ4IjpbMF0sInkiOlsxXX0sIm8iOnsieCI6WzAuMzMzXSwieSI6WzBdfSwidCI6MjIsInMiOlswXX0seyJ0IjoyNCwicyI6WzEwMF19XSwiaXgiOjV9LCJyIjoxLCJibSI6MCwibm0iOiJGaWxsIDEiLCJtbiI6IkFEQkUgVmVjdG9yIEdyYXBoaWMgLSBGaWxsIiwiaGQiOmZhbHNlfSx7InR5IjoidHIiLCJwIjp7ImEiOjAsImsiOlstNy42MjcsLTcuNjkxXSwiaXgiOjJ9LCJhIjp7ImEiOjAsImsiOlswLDBdLCJpeCI6MX0sInMiOnsiYSI6MCwiayI6WzEwMCwxMDBdLCJpeCI6M30sInIiOnsiYSI6MCwiayI6MCwiaXgiOjZ9LCJvIjp7ImEiOjAsImsiOjEwMCwiaXgiOjd9LCJzayI6eyJhIjowLCJrIjowLCJpeCI6NH0sInNhIjp7ImEiOjAsImsiOjAsIml4Ijo1fSwibm0iOiJUcmFuc2Zvcm0ifV0sIm5tIjoiRWxsaXBzZSAxIiwibnAiOjQsImNpeCI6MiwiYm0iOjAsIml4IjoxLCJtbiI6IkFEQkUgVmVjdG9yIEdyb3VwIiwiaGQiOmZhbHNlfV0sImlwIjowLCJvcCI6NzIwLCJzdCI6MCwiYm0iOjB9LHsiZGRkIjowLCJpbmQiOjMsInR5Ijo0LCJubSI6IkxpbmUiLCJzciI6MSwia3MiOnsibyI6eyJhIjoxLCJrIjpbeyJpIjp7IngiOlswLjY2N10sInkiOlsxXX0sIm8iOnsieCI6WzAuMzMzXSwieSI6WzBdfSwidCI6MjgsInMiOlswXX0seyJpIjp7IngiOlswLjY2N10sInkiOlsxXX0sIm8iOnsieCI6WzAuMzMzXSwieSI6WzBdfSwidCI6MzksInMiOlsxMDBdfSx7InQiOjUwLCJzIjpbMF19XSwiaXgiOjExfSwiciI6eyJhIjowLCJrIjowLCJpeCI6MTB9LCJwIjp7ImEiOjAsImsiOlsyNjAsMjYwLDBdLCJpeCI6MiwibCI6Mn0sImEiOnsiYSI6MCwiayI6WzI5OCwyOTgsMF0sIml4IjoxLCJsIjoyfSwicyI6eyJhIjoxLCJrIjpbeyJpIjp7IngiOlswLDAsMC42NjddLCJ5IjpbMSwxLDFdfSwibyI6eyJ4IjpbMC4zMzMsMC4zMzMsMC4zMzNdLCJ5IjpbMCwwLDBdfSwidCI6MjgsInMiOls0Niw0NiwxMDBdfSx7InQiOjUwLCJzIjpbMTAwLDEwMCwxMDBdfV0sIml4Ijo2LCJsIjoyfX0sImFvIjowLCJzaGFwZXMiOlt7InR5IjoiZ3IiLCJpdCI6W3siaW5kIjowLCJ0eSI6InNoIiwiaXgiOjEsImtzIjp7ImEiOjAsImsiOnsiaSI6W1stMTIwLjIwOCwwXSxbMCwtMTIwLjIwOF0sWzEyMC4yMDcsMF0sWzAsMTIwLjIwOF1dLCJvIjpbWzEyMC4yMDcsMF0sWzAsMTIwLjIwOF0sWy0xMjAuMjA4LDBdLFswLC0xMjAuMjA4XV0sInYiOltbMCwtMjE3LjY1NV0sWzIxNy42NTUsMF0sWzAsMjE3LjY1NV0sWy0yMTcuNjU1LDBdXSwiYyI6dHJ1ZX0sIml4IjoyfSwibm0iOiJQYXRoIDEiLCJtbiI6IkFEQkUgVmVjdG9yIFNoYXBlIC0gR3JvdXAiLCJoZCI6ZmFsc2V9LHsidHkiOiJzdCIsImMiOnsiYSI6MCwiayI6WzAuNjUwMjMzNTQ5MjMsMC44MjkzODY5OTE2MTMsMC43MDk5NTY0NDk2MjEsMV0sIml4IjozfSwibyI6eyJhIjowLCJrIjoxMDAsIml4Ijo0fSwidyI6eyJhIjowLCJrIjoyLCJpeCI6NX0sImxjIjoxLCJsaiI6MSwibWwiOjEwLCJibSI6MCwibm0iOiJTdHJva2UgMSIsIm1uIjoiQURCRSBWZWN0b3IgR3JhcGhpYyAtIFN0cm9rZSIsImhkIjpmYWxzZX0seyJ0eSI6InRyIiwicCI6eyJhIjowLCJrIjpbMjk3LjU4NywyOTguMTE5XSwiaXgiOjJ9LCJhIjp7ImEiOjAsImsiOlswLDBdLCJpeCI6MX0sInMiOnsiYSI6MCwiayI6WzEwMCwxMDBdLCJpeCI6M30sInIiOnsiYSI6MCwiayI6MCwiaXgiOjZ9LCJvIjp7ImEiOjAsImsiOjEwMCwiaXgiOjd9LCJzayI6eyJhIjowLCJrIjowLCJpeCI6NH0sInNhIjp7ImEiOjAsImsiOjAsIml4Ijo1fSwibm0iOiJUcmFuc2Zvcm0ifV0sIm5tIjoiR3JvdXAgMSIsIm5wIjoyLCJjaXgiOjIsImJtIjowLCJpeCI6MSwibW4iOiJBREJFIFZlY3RvciBHcm91cCIsImhkIjpmYWxzZX1dLCJpcCI6MjgsIm9wIjo3MjAsInN0IjowLCJibSI6MH0seyJkZGQiOjAsImluZCI6NCwidHkiOjQsIm5tIjoiU2hhZG93Iiwic3IiOjEsImtzIjp7Im8iOnsiYSI6MSwiayI6W3siaSI6eyJ4IjpbMC42NjddLCJ5IjpbMV19LCJvIjp7IngiOlswLjMzM10sInkiOlswXX0sInQiOjIyLCJzIjpbMF19LHsiaSI6eyJ4IjpbMC42NjddLCJ5IjpbMV19LCJvIjp7IngiOlswLjMzM10sInkiOlswXX0sInQiOjMzLCJzIjpbMTAwXX0seyJ0Ijo0NCwicyI6WzBdfV0sIml4IjoxMX0sInIiOnsiYSI6MCwiayI6MCwiaXgiOjEwfSwicCI6eyJhIjowLCJrIjpbMjYwLDI2MCwwXSwiaXgiOjIsImwiOjJ9LCJhIjp7ImEiOjAsImsiOlsyOTgsMjk4LDBdLCJpeCI6MSwibCI6Mn0sInMiOnsiYSI6MSwiayI6W3siaSI6eyJ4IjpbMCwwLDAuNjY3XSwieSI6WzEsMSwxXX0sIm8iOnsieCI6WzAuMzMzLDAuMzMzLDAuMzMzXSwieSI6WzAsMCwwXX0sInQiOjIyLCJzIjpbNjAsNjAsMTAwXX0seyJ0Ijo0NCwicyI6WzEwMCwxMDAsMTAwXX1dLCJpeCI6NiwibCI6Mn19LCJhbyI6MCwic2hhcGVzIjpbeyJ0eSI6ImdyIiwiaXQiOlt7ImluZCI6MCwidHkiOiJzaCIsIml4IjoxLCJrcyI6eyJhIjowLCJrIjp7ImkiOltbLTk0Ljc5NywwXSxbMCwtOTQuNzk3XSxbOTQuNzk3LDBdLFswLDk0Ljc5OF1dLCJvIjpbWzk0Ljc5NywwXSxbMCw5NC43OThdLFstOTQuNzk3LDBdLFswLC05NC43OTddXSwidiI6W1swLC0xNzEuNjQ2XSxbMTcxLjY0NiwwXSxbMCwxNzEuNjQ2XSxbLTE3MS42NDYsMF1dLCJjIjp0cnVlfSwiaXgiOjJ9LCJubSI6IlBhdGggMSIsIm1uIjoiQURCRSBWZWN0b3IgU2hhcGUgLSBHcm91cCIsImhkIjpmYWxzZX0seyJ0eSI6ImZsIiwiYyI6eyJhIjowLCJrIjpbMC44ODgxNTExNjEzNDMsMC45NDQwNzU5Mzk3MDIsMC44OTU3MzQ0ODAzMTYsMV0sIml4Ijo0fSwibyI6eyJhIjowLCJrIjoxMDAsIml4Ijo1fSwiciI6MSwiYm0iOjAsIm5tIjoiRmlsbCAxIiwibW4iOiJBREJFIFZlY3RvciBHcmFwaGljIC0gRmlsbCIsImhkIjpmYWxzZX0seyJ0eSI6InRyIiwicCI6eyJhIjowLCJrIjpbMjk3LjU4NywyOTguMTE5XSwiaXgiOjJ9LCJhIjp7ImEiOjAsImsiOlswLDBdLCJpeCI6MX0sInMiOnsiYSI6MCwiayI6WzEwMCwxMDBdLCJpeCI6M30sInIiOnsiYSI6MCwiayI6MCwiaXgiOjZ9LCJvIjp7ImEiOjAsImsiOjEwMCwiaXgiOjd9LCJzayI6eyJhIjowLCJrIjowLCJpeCI6NH0sInNhIjp7ImEiOjAsImsiOjAsIml4Ijo1fSwibm0iOiJUcmFuc2Zvcm0ifV0sIm5tIjoiR3JvdXAgMSIsIm5wIjoyLCJjaXgiOjIsImJtIjowLCJpeCI6MSwibW4iOiJBREJFIFZlY3RvciBHcm91cCIsImhkIjpmYWxzZX1dLCJpcCI6MjIsIm9wIjo3MjAsInN0IjowLCJibSI6MH1dLCJtYXJrZXJzIjpbXX0="
+      background="transparent"
+      speed="1"
+      style="width: 200px; height: 200px;"
+      loop
+      autoplay>
+    </lottie-player>
+  </div>
+  <p class="thank-you-text">THANK YOU FOR YOUR FEEDBACK.</p>
+</div>
+
+
+
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
