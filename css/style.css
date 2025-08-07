@@ -5,6 +5,14 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Optima';
+  src: url('../fonts/Optima.woff2') format('woff2'),
+       url('../fonts/Optima.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body, html {
   height: 100%;
   font-family: 'Optima', sans-serif;
@@ -264,4 +272,5 @@ body, html {
   color: white;
   letter-spacing: 1px;
 }
+
 
